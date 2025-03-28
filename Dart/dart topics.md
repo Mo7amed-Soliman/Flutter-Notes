@@ -1,6 +1,6 @@
 ---
 share_link: https://share.note.sx/rrs2ni6e#TljgNJFjcNVr1r0/DK7NtI7qS7kerKDQUNE4dI/eYJo
-share_updated: 2025-03-29T00:36:34+02:00
+share_updated: 2025-03-29T01:47:34+02:00
 ---
 #### [[1. Introduction]]
 #### [[2. Data Types]]
@@ -12,6 +12,8 @@ share_updated: 2025-03-29T00:36:34+02:00
 ### [[8. Functions]]
 ### [[9. Records]]
 ### [[10. Generics]]
+### [[11. Typedefs]]
+
 
  
 
