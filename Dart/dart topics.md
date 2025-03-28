@@ -11,6 +11,10 @@ share_updated: 2025-03-29T00:36:34+02:00
 ### [[7. Control Flow]]
 ### [[8. Functions]]
 ### [[9. Records]]
+### [[10. Generics]]
+
+ 
+
 
 
 
