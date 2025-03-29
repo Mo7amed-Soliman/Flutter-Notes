@@ -9,6 +9,8 @@
 ### [[9. Records]]
 ### [[10. Generics]]
 ### [[11. Typedefs]]
+### [[12 Regular Expressions]]
+
 
 
  

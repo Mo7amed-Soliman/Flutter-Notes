@@ -1,0 +1,76 @@
+### Introduction
+
+[Regexr.com](https://regexr.com/) is a useful tool for testing regular expressions.
+
+Regular expressions are used in various applications, including:
+- Validating user input
+- Searching for patterns in text
+- Manipulating strings
+
+### Regular Expression Components
+
+- **`^`** : Anchors the match at the beginning of the string.
+- **`$`** : Anchors the match at the end of the string.
+- **`.`** : Matches any single character except a newline.
+- **`[]`** : Matches any character inside the brackets.
+- **`[^ ]`** : Matches any character not inside the brackets.
+- **`|`** : (or) Matches either the pattern on the left or the pattern on the right.
+- **`(pattern)`** : (group) Matches the pattern inside the parentheses. 
+- **`?`** : Matches (zero or one) occurrence of the pattern to its left.
+- **`+`** : Matches (one or more) repetitions of the pattern to its left.
+- **`*`** : Matches (zero or more) repetitions of the pattern to its left.
+- **`\d`** : Matches any digit (0-9).
+- **`\w`** : Matches any word character (a-z, A-Z, 0-9, _).
+- **`\s`** : Matches any whitespace character (space, tab, newline).
+- **`\D`** : Matches any non-digit character.
+- **`\W`** : Matches any non-word character.
+- **`\S`** : Matches any non-whitespace character.
+
+#### Quantifiers
+
+- **`{n}`** : Matches exactly `n` repetitions.
+- **`{n,}`** : Matches at least `n` repetitions.
+- **`{n,m}`** : Matches between `n` and `m` repetitions.
+
+#### Example Patterns
+
+- **`r'^.$'`** : Matches a string of length 1.
+- **`r'^\d+$'`** : Matches a string of digits.
+- **`r'^[a-zA-Z0-9]+$'`** : Matches a string of alphanumeric characters.
+### Examples
+
+#### Example 1: Email Validation
+```dart
+bool isValidEmail(String email) {
+  RegExp emailRegex = RegExp(r'^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$');
+  return emailRegex.hasMatch(email);
+}
+
+void main() {
+  print(isValidEmail('user@example.com')); // true
+  print(isValidEmail('invalid.email')); // false
+}
+```
+
+#### Example 2: Phone Number Validation
+#### Valid formats:
+```
+01123456789
+01234567896
+01534567888
+01034567895
+```
+
+#### Regex patterns:
+```dart
+bool isValidPhoneNumber(String phone) {
+  RegExp phoneRegex = RegExp(r'^(01)[1250]\d{8}$');
+  return phoneRegex.hasMatch(phone);
+}
+
+void main() {
+  print(isValidPhoneNumber('01034567895')); // true
+  print(isValidPhoneNumber('0112345'));     // false (too short)
+  print(isValidPhoneNumber('01312345678')); // false (invalid 3rd digit)
+}
+```
