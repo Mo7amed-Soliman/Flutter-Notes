@@ -1,3 +1,4 @@
+
 #### [[1. Introduction]]
 #### [[2. Data Types]]
 #### [[3. Collections]]
@@ -9,7 +10,9 @@
 ### [[9. Records]]
 ### [[10. Generics]]
 ### [[11. Typedefs]]
-### [[12 Regular Expressions]]
+### [[12. Regular Expressions]]
+### [[13. Extensions]]
+
 
 
 
