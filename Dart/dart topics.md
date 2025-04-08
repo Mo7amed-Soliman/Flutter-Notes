@@ -1,6 +1,6 @@
 ---
 share_link: https://share.note.sx/fzvas7ud#8h7B33Qu/P5W5t+s4fW9P9aHIXGP86HlOPnqG6shsQ0
-share_updated: 2025-03-30T21:38:48+02:00
+share_updated: 2025-04-05T19:44:25+02:00
 ---
 ------
 ## Basics topics
