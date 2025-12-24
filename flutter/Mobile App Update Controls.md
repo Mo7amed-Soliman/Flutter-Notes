@@ -1,3 +1,7 @@
+---
+share_link: https://share.note.sx/k8rf5fzi#VDMshf7lGIqx2fnTAIZYlgsHye0rRufm+2YqCIO2bYo
+share_updated: 2025-12-05T13:27:31+02:00
+---
 
 This document describes the controls for **Exact Blocked Version**, **Minimum Supported Version**, and **Maintenance Mode** for mobile apps.
 
