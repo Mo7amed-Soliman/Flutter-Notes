@@ -68,9 +68,9 @@ For your URL:
 
 Query parameters key/value:
 
-|Key|Value|
-|---|---|
-|name|soliman|
+| Key  | Value   |
+| ---- | ------- |
+| name | soliman |
 
 If multiple params:
 ```

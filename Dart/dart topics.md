@@ -22,3 +22,7 @@ share_updated: 2025-09-28T23:32:15+03:00
 [[11. Typedefs]]
 [[12. Regular Expressions]]
 [[13. Extensions]]
+
+---
+## OOP
+
