@@ -42,12 +42,12 @@ await tester.enterText(find.byKey(Key('password_field')), 'secret');
 
 ## Keys vs Other Finders Compared
 
-|Finder|Fragile?|Why|
-|---|---|---|
-|`find.text('Login')`|✅ Yes|Breaks on copy change or translation|
-|`find.byType(ElevatedButton)`|✅ Yes|Breaks if multiple buttons exist|
-|`find.byIcon(Icons.email)`|✅ Yes|Breaks if icon changes|
-|`find.byKey(Key('login_btn'))`|❌ No|Stable, explicit, unique|
+| Finder                         | Fragile? | Why                                  |
+| ------------------------------ | -------- | ------------------------------------ |
+| `find.text('Login')`           | ✅ Yes    | Breaks on copy change or translation |
+| `find.byType(ElevatedButton)`  | ✅ Yes    | Breaks if multiple buttons exist     |
+| `find.byIcon(Icons.email)`     | ✅ Yes    | Breaks if icon changes               |
+| `find.byKey(Key('login_btn'))` | ❌ No     | Stable, explicit, unique             |
 
 ---
 
@@ -115,3 +115,4 @@ Need a Key?
 │
 └── Need to access state, size, or navigate globally?
       └── Global Key<widget state>()
+      
