@@ -1,4 +1,4 @@
-Last Post: SessionCubit internals — how the session is built & hydrated. (https://surl.li/ycmwao)
+Last Post: How routing becomes a security layer — not just navigation.
 Today: How the UI enforces authorization — declaratively, without a single if-statement.
 
 PermissionGate — 6 requirement types, one widget.

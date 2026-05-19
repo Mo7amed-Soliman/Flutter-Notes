@@ -1,6 +1,6 @@
 
 
-Last Post: JWT + RBAC inside the app — the full session pipeline. (https://surl.li/ycmwao)
+Last Post:
 Today: How routing becomes a security layer — not just navigation.
 
 GoRouter + RBAC — two gates, one source of truth.
@@ -14,6 +14,7 @@ This architecture does both — from the same permission matrix.
    routePermissionMap ties every path to a List<AppPermission>:
 
       RoutePaths.soldiersView → [canViewSoldiers, unitRepresentativeOnly]
+      RoutePaths.addsoldiersView → [canManageSoldiers]
       RoutePaths.vacationsView → [canManageVacations, unitRepresentativeOnly]
       RoutePaths.ncosReportsView → [canViewNCOReport, unitRepresentativeOnly]
 
@@ -43,18 +44,7 @@ This architecture does both — from the same permission matrix.
    Parent permission = child permission.
    No need to re-declare guards on every nested route.
 
-4️⃣ firstAuthorizedBranch() — smart post-login redirect
-
-   After login, the app doesn't dump everyone on the same screen.
-   It walks orderedBranchRoutes and opens the first branch the user can access.
-
-      soldiersAffairs role → lands on /soldiers
-      vacationsAffairs role → lands on /vacations
-      readOnly role → lands on /soldiers-reports
-
-   No hardcoded home screen. Roles decide the entry point.
-
-5️⃣ GoRouterRefresh — session drives routing
+4️⃣ GoRouterRefresh — session drives routing
 
    class GoRouterRefresh extends ChangeNotifier {
      void notify() => notifyListeners();
@@ -64,7 +54,7 @@ This architecture does both — from the same permission matrix.
    GoRouter re-runs redirect immediately.
    No manual navigation calls. No stale screens.
 
-6️⃣ PermissionGate — widget-level enforcement
+5️⃣ PermissionGate — widget-level enforcement
 
    Routes block unauthorized navigation.
    PermissionGate hides what unauthorized users must not even see:
@@ -91,3 +81,12 @@ The architecture in 6 steps:
 Two gates. One matrix. Zero gaps.
 
 #Flutter #Security #MobileDev #CleanArchitecture #RBAC #JWT #GoRouter
+
+
+
+
+
+
+
+
+
