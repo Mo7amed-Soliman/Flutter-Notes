@@ -54,5 +54,6 @@ share_updated: 2026-06-03T10:22:15+03:00
 7. debounceTime VS throttleTime
 8.  pure function
 9. hydrated bloc
-10. 
-11. 
+10. Completer ?
+11. tearoffs dart
+12. 
